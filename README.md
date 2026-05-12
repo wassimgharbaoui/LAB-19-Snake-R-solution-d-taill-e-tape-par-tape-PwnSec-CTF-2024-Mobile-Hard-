@@ -109,7 +109,7 @@ JADX décompile le bytecode Dalvik en code Java lisible. L'objectif est d'identi
 java -jar apktool_3.0.2.jar d snake_real.apk -o snake_smali
 ```
 
-<img width="1020" height="232" alt="image" src="https://github.com/user-attachments/assets/ce323c10-e778-41fb-9d1d-6113520e99a1" />
+
 
 
 #### 3b — Patch de `isDeviceRooted()` en Smali
@@ -151,8 +151,6 @@ java -jar apktool_3.0.2.jar b snake_smali -o snake_patched.apk
 java -jar uber-apk-signer.jar --apks snake_patched.apk
 ```
 
-<!-- 📸 IMAGE 4 — Capture de la signature uber-apk-signer -->
-<img width="1458" height="667" alt="3" src="https://github.com/user-attachments/assets/502e1c89-284e-4cdc-bd82-eb0e3ac56528" />
 
 ---
 
@@ -166,8 +164,6 @@ adb uninstall com.pwnsec.snake
 adb install snake_patched-aligned-debugSigned.apk
 ```
 
-<!-- 📸 IMAGE 5 — Capture de l'installation ADB -->
-<img width="1553" height="265" alt="4" src="https://github.com/user-attachments/assets/d475caf0-bdb7-45fa-a868-b75791283584" />
 
 ---
 
@@ -190,8 +186,7 @@ adb push Skull_Face.yml /sdcard/Snake/Skull_Face.yml
 
 > ⚠️ **Précision critique :** Le paramètre contient exactement **16 fois la lettre 'a'** après "Sn". Une erreur de compte = pas de flag.
 
-<!-- 📸 IMAGE 6 — Capture du fichier Skull_Face.yml -->
-<img width="1325" height="49" alt="7" src="https://github.com/user-attachments/assets/ccf30cd4-20b1-40ee-9d3f-3a42ebd2530f" />
+
 
 ---
 
